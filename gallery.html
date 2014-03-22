@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style3.css">
+
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        
+        <link rel="stylesheet" href="css/noJS.css">
+        <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+        <link rel="stylesheet" href="css/component.css" />
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+        <script src="js/modernizr.custom.js"></script>
+        <!--<script src="js/modernizr.custom.97074.js"></script>-->
+    </head>
+    <body class="gallery">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+      
+            <a href="#" class="visible-phone show-btn">
+                            <i class="btn-arrow-show"></i>
+            </a>
+       
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span3 menu-container"><!-- Left Column -->
+                    <div class="menu">
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                            <p class="">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                            <a href="#" class="visible-phone hide-btn">
+                                <i class="btn-arrow"></i>
+                            </a>
+                        </div>
+                        <div id="dl-menu" class="dl-menuwrapper"><!-- Menu -->
+                            <ul class=" dl-menu dlmenuopen dl-menuopen">
+                                  <li class="line"></li>  
+                                <li><a href="index.html">Home</a>
+                                </li>
+                                <li class="line"></li>
+                                <li>
+                                    <a href="gallery.html">Portfolio </a>
+                                </li>
+                                <li class="line"></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dl-submenu">
+                                        <li class="line"></li> 
+                                            <li><a href="about.html">About</a></li>
+                                            <li class="line"></li> 
+                                            <li><a href="#">Slider</a></li>
+                                            <li class="line"></li> 
+                                            <li><a href="shortcodes.html">ShortCodes</a></li>
+                                            <li class="line"></li> 
+                                        </ul>
+                                </li>
+                                <li class="line"></li>
+                                <li><a href="blog.html">Blog </a></li>
+                                <li class="line"></li>
+                                <li><a href="contact.html">Conatcts </a></li>
+                                <li class="line"></li>
+                            </ul>
+                        </div> <!-- / Menu -->
+                        <div class="bottom">
+                            <form action="#" class="search" >
+                                <input type="text" name="search" placeholder="Search">
+                            </form>
+                            <ul class="social">
+                                <li><a href="#"><i class="sprite-f"></i></a></li>
+                                <li><a href="#"><i class="sprite-in"></i></a></li>
+                                <li><a href="#"><i class="sprite-t"></i></a></li>
+                                <li><a href="#"><i class="sprite-g"></i></a></li>
+                                <li><a href="#"><i class="sprite-w"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- / Left Column -->
+                
+                <div class="span9 offset-menu content">
+                    <div class="ff-container row-fluid ">
+                        <ul class="nav nav-pills gallery-filter"><!-- Filter  -->
+                            <li class="active ff-label-type-all"><a href="#">All</a></li>
+                            <li class="ff-label-type-1"><a href="#">First</a></li>
+                            <li class="ff-label-type-2"><a href="#">Second</a></li>
+                            <li class="ff-label-type-3"><a href="#">Third</a></li>
+                        </ul>
+                        <input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all" checked="checked" />
+                        <input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1" />
+                        <input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2" />
+                        <input id="select-type-3" name="radio-set-1" type="radio" class="ff-selector-type-3" />
+                        <ul class="gallery-block .span12 da-thumbs  ff-items" id="da-thumbs" ><!-- Gallery -->
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg1.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                       
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg2.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg3.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="work.html">
+                                    <img src="img/gimg4.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg5.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg6.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg7.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="work.html">
+                                    <img src="img/gimg8.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg9.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg10.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="work.html">
+                                    <img src="img/gimg11.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg1.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                       
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                       
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg2.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg3.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="work.html">
+                                    <img src="img/gimg4.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg5.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg6.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-2">
+                                <a href="work.html">
+                                    <img src="img/gimg7.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="work.html">
+                                    <img src="img/gimg8.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg9.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-1">
+                                <a href="work.html">
+                                    <img src="img/gimg10.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="ff-item-type-3">
+                                <a href="work.html">
+                                    <img src="img/gimg11.png" />
+                                    <div>
+                                        <h3>Laurel</h3>
+                                        <small>logotype</small>
+                                        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
+                                         
+                                    </div>
+                                </a>
+                            </li>
+                        </ul><!-- / Gallery -->
+
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+       
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        
+        <script src="js/jquery.dlmenu.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/jquery.hoverdir.js"></script>
+         <script src='js/jquery.mousewheel.js'></script>
+        <script src="js/jquery.jscrollpane.min.js"></script>
+        <script src="js/main.js"></script>
+
+       
+        <script>
+                //.ff-container input.ff-selector-type-all:checked ~ .ff-items li 
+            var msnry;
+
+             $(window).load(function(){
+
+                var container = document.querySelector('.gallery-block');
+                msnry = new Masonry( container, {
+                  // options
+                  columnWidth: container.querySelector('.gallery-block li'),
+                  gutter:0,
+                  itemSelector: 'li'
+                });
+
+               
+               
+            
+                $('#da-thumbs li ').each( function() { $(this).hoverdir(); } );
+
+               $('.ff-label-type-all').on('click.m',function(){
+                    $('input[name=radio-set-1]').removeAttr('checked')
+                    $('#select-type-all').prop("checked", true);
+                    $('.gallery-filter li').removeClass('active');
+                    $(this).addClass('active');
+
+                  
+               });
+
+
+               $('.ff-label-type-1').on('click.m',function(){
+                    $('input[name=radio-set-1]').removeAttr('checked');
+                    $('#select-type-1').prop("checked", true);
+                    $('.gallery-filter li').removeClass('active');
+                    $(this).addClass('active');
+
+                    
+               });
+
+
+               $('.ff-label-type-2').on('click.m',function(){
+                    $('input[name=radio-set-1]').removeAttr('checked');
+                    $('#select-type-2').prop("checked", true);
+                    $('.gallery-filter li').removeClass('active');
+                    $(this).addClass('active');
+               });
+
+               $('.ff-label-type-3').on('click.m',function(){
+                    $('input[name=radio-set-1]').removeAttr('checked');
+                    $('#select-type-3').prop("checked", true);
+                    $('.gallery-filter li').removeClass('active');
+                    $(this).addClass('active');
+               });
+
+
+                
+                
+            });
+
+
+        </script>
+       
+    </body>
+</html>
