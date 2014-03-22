@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Artvid.ru - Все фильмы на портале</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" /> 
+		<meta name="author" content="">
+
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-1.9.1.min.js"></script>  	
+		<script src="js/bootstrap.min.js"></script> 					
+		<script src="js/jquery.rating-2.0.min.js"></script> 					
+		<script src="js/jquery.scroll.js"></script> 					
+		<script src="js/socializ.js"></script> 					
+		<script src="js/chosen.jquery.min.js"></script> 					
+		<script src="js/prism.js"></script> 					
+		<!-- Le styles -->	
+		<link href="css/bootstrap.min.css" rel="stylesheet">			
+		
+		<link href="css/jquery.rating.css" rel="stylesheet">
+		<link href="css/font.css?time=12345" rel="stylesheet">
+		<link href="css/scroll.css" rel="stylesheet">
+		<link href="css/chosen.css" rel="stylesheet">
+		<link href="css/toggle-switch.css" rel="stylesheet">
+		<link href="css/style.css?time=12345" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="mtop">
+			<div class="search-box">
+				<div class="container">
+					<div class="row">
+						<div class="span12 box-1">
+							<div class="reg">
+								<a href="#myModal"  data-toggle="modal"  role="button" class="red">Вход</a>&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="#" class="white">Регистрация</a>						
+							</div>							
+						</div>						
+					</div>
+				</div>
+			</div>
+			<div class="menu-box">
+				<div class="container">
+					<div class="row">
+						<div class="span12 box-1">
+							<div class="search">
+								<div class="input-prepend input-append search-field">
+								  
+								  <input class="span4" type="search" placeholder="Что ищем?" id="search">
+								  <span class="add-on"> <span class="myicon-cross"></span> </span>
+								</div>
+								<select name="search-type" id="search-type">
+			            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+			            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+			            			<option value="Lorem Ipsum">Lorem Ipsum</option>
+								</select>
+								
+								<div class="more-search">
+									<a href="#" class="mbtn"></a>
+								</div>
+
+							</div>
+
+							<div class="logo"><a href="#"><img src="img/logo.png"></a></div>
+							<div class="menu">
+								<div class="navbar">
+									<div class="navbar-inner">
+										
+								<ul class="nav">
+									<li class="dropdown"><a href="#" role="menu" class="dot dropdown-toggle" data-toggle="dropdown" >Фильмы</a>
+
+										<div class="dropdown-menu" >
+											<div class="arrow"></div>
+											<div class="">
+												<ul>
+													<li><a href="#">Авторское кино</a></li>
+													<li><a href="#">Мелодрамы</a></li>
+													<li><a href="#">Боевики</a></li>
+													<li><a href="#">Военные</a></li>
+													<li><a href="#">Детективы</a></li>
+													<li><a href="#">Для детей</a></li>
+													<li><a href="#">Документальные</a></li>
+													<li><a href="#">Драмы</a></li>
+													<li><a href="#">Комедии</a></li>
+													<li><a href="#">Короткометражки</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">Мировая классика</a></li>
+													<li><a href="#">Приключения</a></li>
+													<li><a href="#">Советское кино</a></li>
+													<li><a href="#">Триллеры</a></li>
+													<li><a href="#">Ужасы</a></li>
+													<li><a href="#">Фантастика</a></li>
+													<li><a href="#">Фильмы-спектакли</a></li>
+													<li><a href="#">Эротика <sup>18+</sup></a></li>
+												</ul>
+											</div>
+									   </div>
+
+									</li>
+									<li><a href="#" class="dot">Сериалы</a></li>
+									<li><a href="#" class="dot">Мультфильмы</a></li>
+									<li><a href="#" class="dot">Передачи и шоу</a></li>
+									<li><a href="#" class="dot">Рейтинги</a></li>
+									<li><a href="#" class="dot">Игры</a></li>
+									<li  class="dropdown"><a href="#" role="menu" class="dot dropdown-toggle" data-toggle="dropdown">Быстрые ссылки</a>
+										
+										<div class="dropdown-menu last" >
+											<div class="arrow"></div>
+											<div class="">
+												<ul>
+													<li><a href="#">Список фильмов по алфавиту</a></li>
+													<li><a href="#">Новинки кинопроката</a></li>
+													<li><a href="#">1000 лучших фильмов</a></li>
+													<li><a href="#">Фильмы ТОП-250 IMBD</a></li>
+													<li><a href="#">Фильмы ТОП-100 ARTViD</a></li>
+													<li><a href="#">Фильмы ТОП-скачиваний</a></li>
+												</ul>
+
+											</div>
+									   </div>
+
+									</li>
+								</ul>
+							
+									</div>
+								</div>
+								 
+							
+  
+							</div>	
+
+							
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			
+			<div id="myCarousel" class="carousel slide">
+							  
+							  <!-- Carousel items -->
+							  <div class="carousel-inner">
+							    <div class="active item">
+							    	<div class="imgitm">
+							    		<a href="#"><img src="img/bg1.jpg" alt="Slide1"></a> 	
+							    	</div>
+							    	
+							    	<div class="container">
+							    		<div class="row">
+							    			
+							    			<div class="alert caption">
+							    				<div class="black">
+							    					<button type="button" class="close" data-dismiss="alert"></button>
+											  		
+													<h3>Мстители <sup><small>2012, США</small></sup> </h3>
+													
+													<p class="type">фантастика, фэнтези, боевик, приключения</p>
+													<p class="desc">Фильм является сиквелом нашумевшей картины «Тор», снятой по мотивам знаменитых комиксов Marvel.</p>
+
+							    				</div>
+											  
+											</div>
+
+							    		</div>
+							    	</div>
+							    	
+							    </div>
+							    <div class=" item">
+							    	<div class="imgitm">
+							    		<a href="#"><img src="img/bg1.jpg" alt="Slide1"></a> 	
+							    	</div>
+							    	<div class="container">
+							    		<div class="row">
+							    			
+							    			<div class="alert caption">
+							    				<div class="black">
+							    					<button type="button" class="close" data-dismiss="alert"></button>
+											  		
+													<h3>Мстители <sup><small>2012, США</small></sup> </h3>
+													
+													<p class="type">фантастика, фэнтези, боевик, приключения</p>
+													<p class="desc">Фильм является сиквелом нашумевшей картины «Тор», снятой по мотивам знаменитых комиксов Marvel.</p>
+
+							    				</div>
+											  
+											</div>
+
+							    		</div>
+							    	</div>
+							    	
+							    </div>
+
+
+							    
+							  </div>
+							  <!-- Carousel nav -->
+							  <div class="container ">
+							  	<div class="row carousel-nav">
+							  		<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+							  			<span class="myarrow-l"></span>
+							  		</a>
+							 		<a class="carousel-control right" href="#myCarousel" data-slide="next">
+							 			<span class="myarrow-r"></span>
+							 		</a>		
+							  	</div>
+							  </div>
+							  
+							</div>
+
+		</div>	
+		
+		<div class="container">
+			<div class="row slide_main">
+				<div class="span12">
+					
+					<div class="switch switch-four candy">
+						<input id="d1" name="view3" type="radio" checked="">
+						<label for="d1" onclick="">Последние поступления</label>
+
+						<input id="d2" name="view3" type="radio">	
+						<label for="d2" onclick="">Популярные</label>
+						
+						<input id="d3" name="view3" type="radio">
+						<label for="d3" onclick="">Рекомендуемые</label>
+						
+						<input id="d4" name="view3" type="radio">	
+						<label for="d4" onclick="">Наши подборки</label>
+						
+						
+						<span class="slide-button"></span>
+					</div>
+					
+					<div class="pull-right want">
+						<a href="#" rel="popover" id="popover">Вы хотели посмотреть</a>
+					</div>
+				</div>
+				<div class="span12">
+					<div><h3>Фильмы</h3></div>
+					<div class="sl-view-all"><a href="#">Показать все</a> <b class="myicon-arrow"></b></div>
+					<div class="sl-slider">						
+						<div class="sl-slider-left"></div>
+						<div class="sl-slider-right"></div>
+						<div class="scroll-horizontal">
+							<div class="sl-slider-lenta">
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f1.jpg"></a></div>
+									<div class="sl-name">Что творят мужчины</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f2.jpg"></a></div>
+									<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f3.jpg"></a></div>
+									<div class="sl-name">Что творят мужчины</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f4.jpg"></a></div>
+									<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f5.jpg"></a></div>
+									<div class="sl-name">Что творят мужчины</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f6.jpg"></a></div>
+									<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f7.jpg"></a></div>
+									<div class="sl-name">Что творят мужчины</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f8.jpg"></a></div>
+									<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f1.jpg"></a></div>
+									<div class="sl-name">Что творят мужчины</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>
+								<div class="sl-box">
+									<div class="sl-img"><a href=""><img src="temp/f2.jpg"></a></div>
+									<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+									<div class="sl-dop">2013, Россия, Комедия</div>
+								</div>							
+							</div>
+						</div>
+					</div>
+				</div>	
+
+				<div class="span12">
+					<h3>Сериалы</h3>
+					<div class="sl-view-all"><a href="#">Показать все</a> <b class="myicon-arrow"></b></div>
+					<div class="sl-slider">						
+						<div class="sl-slider-left"></div>
+						<div class="sl-slider-right"></div>
+						<div class="scroll-horizontal">
+						<div class="sl-slider-lenta">
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f8.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f7.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f6.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f5.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f4.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f3.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f2.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f1.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f1.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f2.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>							
+						</div>
+						</div>
+					</div>
+				</div>	
+
+
+				<div class="span12">
+					<h3>Мультфильмы</h3>
+					<div class="sl-view-all"><a href="#">Показать все</a> <b class="myicon-arrow"></b></div>
+					<div class="sl-slider">						
+						<div class="sl-slider-left"></div>
+						<div class="sl-slider-right"></div>
+						<div class="scroll-horizontal">
+						<div class="sl-slider-lenta">
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f5.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f6.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f7.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f8.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f1.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f2.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f3.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f4.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f5.jpg"></a></div>
+								<div class="sl-name">Что творят мужчины</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>
+							<div class="sl-box">
+								<div class="sl-img"><a href=""><img src="temp/f6.jpg"></a></div>
+								<div class="sl-name">Властелин колец 3: Возвращение Короля</div>
+								<div class="sl-dop">2013, Россия, Комедия</div>
+							</div>							
+						</div>
+						</div>
+					</div>
+				</div>				
+				
+				
+			</div>
+		</div>
+		
+		
+		<div class="rating-box">
+			<div class="container" style="margin-top:30px;">
+				<div class="row">					
+					<div class="span4 right_line">
+						<h4>Рейтинги</h4>
+
+						<select data-placeholder="По версии IMDR" id="imdr-chosen">
+	            			<option value=""></option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+			            </select>
+
+
+						<div style="margin:20px 0;" class="rating-films">
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m1.jpg"></div>
+								<div class="rt-1"><a href="#">Во все тяжкие</a></div>
+								<div class="rt-2">Сериалы</div>
+								<div class="rt-3">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div class="rt-txt">Рейтинг:</div>
+									<div class="rt-num">9.4</div>
+									<div class="rt-star" id="rating_1">
+										<input type="hidden" name="val" value="9.4"/>																		
+									</div>
+								</div>
+							</div>
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m2.jpg"></div>
+								<div class="rt-1"><a href="#">Властелин колец 3:  Возвращение Короля</a></div>
+								<div class="rt-2">Сериалы</div>
+								<div class="rt-3">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div class="rt-txt">Рейтинг:</div>
+									<div class="rt-num">9.2</div>
+									<div class="rt-star" id="rating_2"><input type="hidden" name="val" value="9.2"/>	</div>
+								</div>
+							</div>
+							<div class="rating-content" style="margin-bottom:0px;">
+								<div class="rating-img"><img src="temp/m3.jpg"></div>
+								<div class="rt-1"><a href="#">Властелин колец 3:  Возвращение Короля</a></div>
+								<div class="rt-2">Сериалы</div>
+								<div class="rt-3">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div class="rt-txt">Рейтинг:</div>
+									<div class="rt-num">8.4</div>
+									<div class="rt-star" id="rating_3"><input type="hidden" name="val" value="8.4"/>	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4 right_line">
+						<h4>Лауреаты премий</h4>
+						
+						<select data-placeholder="По версии IMDR" id="award-chosen">
+	            			<option value=""></option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+			            </select>
+
+						<div style="margin:20px 0;" class="award-films">
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m3.jpg"></div>
+								<div class="rt-1"><a href="#">Во все тяжкие</a></div>								
+								<div class="rt-2">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div>Номинаций: <b>14</b></div>
+									<div style="padding:3px 0;">Наград: <b>15</b></div>									
+								</div>
+							</div>
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m2.jpg"></div>
+								<div class="rt-1"><a href="#">Властелин колец 3:  Возвращение Короля</a></div>					
+								<div class="rt-2">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div>Номинаций: <b>12</b></div>
+									<div style="padding:3px 0;">Наград: <b>12</b></div>									
+								</div>
+							</div>
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m1.jpg"></div>
+								<div class="rt-1"><a href="#">Во все тяжкие</a></div>								
+								<div class="rt-2">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div>Номинаций: <b>19</b></div>
+									<div style="padding:3px 0;">Наград: <b>10</b></div>									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="span4">
+						<h4>Кассовые фильмы</h4>
+						
+						<select data-placeholder="По версии IMDR" id="cash-chosen">
+	            			<option value=""></option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+	            			<option value="Lorem Ipsum">Lorem Ipsum</option> 
+			            </select>
+
+						<div style="margin:20px 0;" class="cash-films">
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m2.jpg"></div>
+								<div class="rt-1"><a href="#">Во все тяжкие</a></div>								
+								<div class="rt-2">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div>Мировые сборы:</div>
+									<div style="padding:3px 0;"><b>$1 200 676</b></div>									
+								</div>
+							</div>
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m1.jpg"></div>
+								<div class="rt-1"><a href="#">Властелин колец 3:  Возвращение Короля</a></div>					
+								<div class="rt-2">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div>Мировые сборы:</div>
+									<div style="padding:3px 0;"><b>$1 200 676</b></div>									
+								</div>
+							</div>
+							<div class="rating-content">
+								<div class="rating-img"><img src="temp/m3.jpg"></div>
+								<div class="rt-1"><a href="#">Во все тяжкие</a></div>								
+								<div class="rt-2">2008, США, Детективы, Триллеры</div>
+								<div class="rt-4">
+									<div>Мировые сборы:</div>
+									<div style="padding:3px 0;"><b>$1 200 676</b></div>									
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="span12 separator"><a class="add-more" href="#">Показать ещё 10</a></div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer-podborka">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<h3 style="margin:20px 0;">Тематические подборки</h3>
+						<div class="span3" style="text-align:center;">
+							<img src="temp/1.jpg"><br/>
+							<div style="padding:5px 0;"><a href="#">Лучшие фильмы о войне</a></div>
+						</div>
+						<div class="span3" style="text-align:center;">
+							<img src="temp/2.jpg"><br/>
+							<div style="padding:5px 0;"><a href="#">Романтические фильмы</a></div>
+						</div>
+						<div class="span3" style="text-align:center;">
+							<img src="temp/3.jpg"><br/>
+							<div style="padding:5px 0;"><a href="#">Шедевры союзмультфильма</a></div>
+						</div>
+						<div class="span3" style="text-align:center;">
+							<img src="temp/4.jpg"><br/>
+							<div style="padding:5px 0;"><a href="#">Фильмы с вышей оценкой  киноакадемии Оскар</a></div>
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-box">
+			<div class="container">
+				<div class="row" style="position:relative;">					
+					<div class="span2">	
+						<ul>
+							<li><b>Главная</b></li>
+							<li><a href="#">Фильмы</a></li>
+							<li><a href="#">Сериалы</a></li>
+							<li><a href="#">Мультфильмы</a></li>
+							<li><a href="#">Передачи и шоу</a></li>
+							<li><a href="#">Рейтинги</a></li>
+							<li><a href="#">Игры</a></li>
+						</ul>							
+					</div>
+					<div class="span2">	
+						<ul>
+							<li><a href="#" class="f_white">О нас</a></li>
+							<li><a href="#">Правила сайта</a></li>
+							<li><a href="#">О рецензиях</a></li>
+							<li><a href="#">Cвязь с нами</a></li>
+							<li><a href="#">Рекламодателям</a></li>								
+						</ul>							
+					</div>
+					<div class="span2">	
+						<ul>
+							<li><a href="#" class="f_white">Помощь</a></li>
+							<li><a href="#">Вопрос-ответ</a></li>
+							<li><a href="#">Книга жалоб</a></li>
+							<li><a href="#">Условия пользования сайтом</a></li>														
+						</ul>							
+					</div>
+					<div class="span3" style="padding-left:25px; width:190px;">	
+						<h4 style="margin:0; padding:0; color:#98A2AB;">Присоединяйся</h4>
+						<div class="links">
+							<a href="#vk"><div class="vk"></div></a>
+							<a href="#twitter"><div class="twitter"></div></a>
+							<a href="#facebook"><div class="facebook"></div></a>
+						</div>
+					</div>
+					
+					<div class="span3">	
+						<div class="login_form">
+							<form action="">
+								<fieldset>
+									<div class="clearfix buttons">
+										<a href="#" class="login pull-left">Вход</a>
+										<a href="#" class="register pull-right">Регистрация</a>
+									</div>
+									<div class="input-prepend log">
+									  <span class="add-on "> <span class="myicon-user"></span> </span>
+									  <input class="span2 form_field " type="text" placeholder="Логин">
+									</div>
+									<div class="input-prepend pass">
+									  <span class="add-on">
+									  	<span class="myicon-key"></span>
+									  </span>
+									  <input class="span2 form_field" type="text" placeholder="Пароль">
+									</div>
+
+									<div class="remember">
+										<span>Запомнить?</span>
+										<div class="pull-right">
+												<span class="yes switch-dis">Да</span>
+												<div class="switch">
+													<input type="checkbox"  />
+													<span class="myicon-img"></span>
+												</div>
+												<span class="no">Нет</span>
+										</div>
+									</div>
+
+									<button class="btn-large btn-primary">Войти</button>
+									<p class="fogot"><a href="#">Забыли пароль?</a></p>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					
+					<div class="copyright">
+						<div class="des">
+							Designed by<br/>
+							<a href="#">Nikatinka-art</a>
+						</div>
+						<!--div class="development">
+							Created in<br/>
+							<a href="#">CapitanStudio</a>
+						</div-->
+					</div>					
+				</div>					
+			</div>
+		</div>
+		
+		
+		<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div>
+			  <div class="modal-header">
+			    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			    <h3 id="myModalLabel">Войти на ARTViD</h3>
+			  </div>
+			  <div class="modal-body">
+			    
+				<div class="input-prepend log">
+				  <span class="add-on "> <span class="myicon-user"></span> </span>
+				  <input class="span2 form_field " type="text" placeholder="Логин">
+				</div>
+				<div class="input-prepend pass">
+				  <span class="add-on">
+				  	<span class="myicon-key"></span>
+				  </span>
+				  <input class="span2 form_field" type="text" placeholder="Пароль">
+				</div>
+
+				<div class="remember">
+					<span>Запомнить ваши данные?</span>
+					<div class="pull-right">
+							<span class="yes switch-dis">Да</span>
+							<div class="switch">
+								<input type="checkbox"  />
+								<span class="myicon-img"></span>
+							</div>
+							<span class="no">Нет</span>
+					</div>
+				</div>
+
+				<button class="btn-large btn-primary">Войти</button>
+
+
+			  </div>
+			  <div class="modal-footer">
+			  	<a href="#">Забыли пароль ?</a>&nbsp;
+			  	<a href="#">Зарегистрироваться</a>
+				    
+			  </div>
+		  </div>
+		</div>
+
+
+
+		<script src="js/code.js"></script> 	
+
+		<script>
+		$(function(){
+	
+			$('#rating_1').rating({
+				fx: 'float',				
+				stars: 10,
+				image: 'img/stars.png',
+				loader: 'img/ajax-loader.gif',
+				url: 'rating.php',
+				readOnly: false,
+				callback: function(responce){					
+					this.vote_success.fadeOut(2000);
+				}
+			});
+			
+			$('#rating_2').rating({
+				fx: 'float',				
+				stars: 10,
+				image: 'img/stars.png',				
+				readOnly: true
+			});
+			
+			$('#rating_3').rating({
+				fx: 'float',				
+				stars: 10,
+				image: 'img/stars.png',				
+				readOnly: true
+			});
+			
+            new Scroll({
+				start:true,
+                horizontal:true
+            });
+			
+			
+		});
+		</script>
+	</body>
+</html>
